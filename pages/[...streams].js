@@ -18,7 +18,7 @@ function ListStreams({ streams, setStreams }) {
             <div className="video-container">
               <iframe
                 id={`idEmbed${capitalize(stream)}`}
-                src={`https://player.twitch.tv/?muted=true&channel=${stream}&parent=localhost&parent=www.multitwitch.tv`}
+                src={`https://player.twitch.tv/?muted=true&channel=${stream}&parent=multitwitch.manaiajr.vercel.app&parent=multitwitch-psi.vercel.app`}
                 allowFullScreen={true}
               ></iframe>
               <div className="video-controls">
