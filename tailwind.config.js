@@ -1,9 +1,11 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false,
+  theme: {
+    extend: {},
   },
-  purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
-  theme: {},
-  variants: {},
-  plugins: [],
-};
+  variants: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/aspect-ratio')],
+}
