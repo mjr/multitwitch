@@ -6,7 +6,7 @@ module.exports = {
     ],
     options: {
       safelist: {
-        standard: [/grid-rows$/, /grid-cols$/],
+        standard: [/^grid-rows/, /^grid-cols/],
       },
     },
   },
