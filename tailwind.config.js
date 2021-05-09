@@ -4,8 +4,10 @@ module.exports = {
       './pages/**/*.{js,ts,jsx,tsx}',
       './components/**/*.{js,ts,jsx,tsx}',
     ],
-    safelist: {
-      standard: [/grid-rows$/, /grid-cols$/],
+    options: {
+      safelist: {
+        standard: [/grid-rows$/, /grid-cols$/],
+      },
     },
   },
   darkMode: false,
