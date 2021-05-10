@@ -20,14 +20,17 @@ export default function Streams() {
   const colsSize = Math.ceil(Math.sqrt(streams.length))
 
   return (
-    <main className="flex items-center h-screen">
+    <main className="flex items-center h-screen bg-twitch-dark">
       <div className="max-w-7xl mx-auto w-full sm:px-6 lg:px-8">
         {router.isReady && !router.query.streams ? (
           <>
-            <h3 className="text-lg leading-6 font-medium text-gray-900">
+            <h1 className="text-3xl sm:text-5xl sm:leading-none font-extrabold tracking-tight text-twitch-primary mb-4">
+              Multi Twitch
+            </h1>
+            <h3 className="text-lg leading-6 font-medium text-white">
               Adicione na URL
             </h3>
-            <p className="mt-1 max-w-2xl text-sm text-gray-500">
+            <p className="mt-1 max-w-2xl text-sm text-gray-300">
               Por exemplo: /gaules/casimito/
             </p>
           </>

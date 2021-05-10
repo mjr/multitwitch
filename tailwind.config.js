@@ -12,7 +12,15 @@ module.exports = {
   },
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        twitch: {
+          primary: '#9147ff',
+          light: '#f7f7f8',
+          dark: '#0e0e10',
+        },
+      },
+    },
   },
   variants: {
     extend: {},
